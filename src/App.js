@@ -1,3 +1,5 @@
+import { ThemeProvider } from './context/ThemeContext';
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Categories from './components/Categories/Categories';
@@ -12,20 +14,23 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <Categories />
-        <Products />
-        <Features />
-        <Collection />
-        <About />
-        <Reviews />
-        <Newsletter />
-        </main>
-        <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Header />
+        <main>
+          <Hero />
+          <Categories />
+          <Products />
+          <Features />
+          <Collection />
+          <About />
+          <Reviews />
+          <Newsletter />
+          </main>
+          <Footer />
+          <ThemeToggle />
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,0 +1,518 @@
+/* ============================================
+   LIGHT THEME — AERION Defence-Tech
+   Overrides all component styles for light mode
+   ============================================ */
+
+[data-theme="light"] {
+  --lt-bg: #FFFFFF;
+  --lt-bg-secondary: #F5F5F5;
+  --lt-card: #FFFFFF;
+  --lt-text-primary: #111111;
+  --lt-text-secondary: #444444;
+  --lt-text-muted: #666666;
+  --lt-border: rgba(0, 0, 0, 0.08);
+  --lt-border-light: rgba(0, 0, 0, 0.04);
+  --lt-green: #39FF14;
+  --lt-green-dark: #2B8A0E;
+  --lt-shadow: rgba(0, 0, 0, 0.06);
+}
+
+/* ── GLOBAL ── */
+[data-theme="light"] body {
+  background: var(--lt-bg) !important;
+  background-image:
+    linear-gradient(rgba(57, 255, 20, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 255, 20, 0.04) 1px, transparent 1px) !important;
+  background-size: 60px 60px !important;
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] ::selection {
+  background: rgba(57, 255, 20, 0.3) !important;
+  color: #000 !important;
+}
+
+/* ── HEADER ── */
+[data-theme="light"] .header {
+  background: transparent !important;
+}
+
+[data-theme="light"] .header.scrolled {
+  background: rgba(255, 255, 255, 0.97) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom-color: rgba(57, 255, 20, 0.15) !important;
+}
+
+[data-theme="light"] .header-logo-text {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .header-nav a {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .header-nav a:hover {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .header-actions button {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .header-actions button:hover {
+  background: rgba(57, 255, 20, 0.08) !important;
+}
+
+[data-theme="light"] .mobile-menu-overlay {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+[data-theme="light"] .mobile-menu {
+  background: var(--lt-bg) !important;
+  border-left-color: rgba(57, 255, 20, 0.15) !important;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-theme="light"] .mobile-menu a {
+  color: var(--lt-text-secondary) !important;
+  border-bottom-color: var(--lt-border-light) !important;
+}
+
+[data-theme="light"] .mobile-menu a:hover {
+  color: var(--lt-green) !important;
+}
+
+[data-theme="light"] .header.scrolled {
+  border-bottom: 1px solid rgba(57, 255, 20, 0.15) !important;
+}
+
+/* ── HERO ── */
+[data-theme="light"] .hero {
+  background: #000 !important;
+}
+
+[data-theme="light"] .hero-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.35) 100%) !important;
+}
+
+[data-theme="light"] .hero-text h1 {
+  color: #fff !important;
+}
+
+[data-theme="light"] .hero-text p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="light"] .btn-secondary {
+  color: #fff !important;
+  border-color: rgba(57, 255, 20, 0.4) !important;
+}
+
+[data-theme="light"] .btn-secondary:hover {
+  background: rgba(57, 255, 20, 0.1) !important;
+  border-color: var(--lt-green) !important;
+}
+
+[data-theme="light"] .hero-arrow {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border-color: rgba(57, 255, 20, 0.2) !important;
+  color: var(--lt-green) !important;
+}
+
+[data-theme="light"] .hero-arrow:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-color: var(--lt-green) !important;
+}
+
+/* ── CATEGORIES ── */
+[data-theme="light"] .categories {
+  background: var(--lt-bg-secondary) !important;
+}
+
+[data-theme="light"] .categories-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .categories-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .category-card {
+  background: var(--lt-card) !important;
+  border-color: var(--lt-border) !important;
+  box-shadow: 0 1px 3px var(--lt-shadow), 0 4px 12px rgba(0,0,0,0.03) !important;
+}
+
+[data-theme="light"] .category-card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08) !important;
+  border-color: rgba(57, 255, 20, 0.2) !important;
+}
+
+[data-theme="light"] .category-card-image-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.40) 100%) !important;
+}
+
+[data-theme="light"] .category-card-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .category-card-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .category-card-btn {
+  color: var(--lt-green-dark) !important;
+}
+
+/* ── PRODUCTS ── */
+[data-theme="light"] .products {
+  background: var(--lt-bg) !important;
+}
+
+[data-theme="light"] .products-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .products-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .product-card {
+  background: var(--lt-card) !important;
+  border-color: var(--lt-border) !important;
+  box-shadow: 0 1px 3px var(--lt-shadow), 0 4px 12px rgba(0,0,0,0.03) !important;
+}
+
+[data-theme="light"] .product-card:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08) !important;
+  border-color: rgba(57, 255, 20, 0.2) !important;
+}
+
+[data-theme="light"] .product-card-image {
+  background: var(--lt-bg-secondary) !important;
+}
+
+[data-theme="light"] .product-card-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .product-card-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .product-card-price {
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .wishlist-btn {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: var(--lt-border) !important;
+}
+
+[data-theme="light"] .wishlist-btn:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(57, 255, 20, 0.3) !important;
+}
+
+[data-theme="light"] .add-to-cart-btn {
+  background: var(--lt-green) !important;
+  color: #000 !important;
+}
+
+[data-theme="light"] .add-to-cart-btn:hover {
+  background: #2BE00F !important;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.25) !important;
+}
+
+[data-theme="light"] .stars svg {
+  fill: var(--lt-green-dark) !important;
+  stroke: var(--lt-green-dark) !important;
+}
+
+/* ── FEATURES ── */
+[data-theme="light"] .features {
+  background: var(--lt-bg-secondary) !important;
+}
+
+[data-theme="light"] .features-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .features-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .feature-card {
+  background: var(--lt-card) !important;
+  border-color: var(--lt-border) !important;
+  box-shadow: 0 1px 3px var(--lt-shadow), 0 4px 12px rgba(0,0,0,0.03) !important;
+}
+
+[data-theme="light"] .feature-card:hover {
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08) !important;
+  border-color: rgba(57, 255, 20, 0.2) !important;
+}
+
+[data-theme="light"] .feature-card-image-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.50) 0%, rgba(255,255,255,0.88) 100%) !important;
+}
+
+[data-theme="light"] .feature-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .feature-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+/* ── COLLECTION ── */
+[data-theme="light"] .collection {
+  background: var(--lt-bg) !important;
+}
+
+[data-theme="light"] .collection-tag {
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .collection-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .collection-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .collection-image-inner {
+  border-color: var(--lt-border) !important;
+}
+
+[data-theme="light"] .collection-image-glow {
+  background: linear-gradient(135deg, rgba(57, 255, 20, 0.10), transparent 60%) !important;
+}
+
+/* ── ABOUT ── */
+[data-theme="light"] .about {
+  background: var(--lt-bg-secondary) !important;
+}
+
+[data-theme="light"] .about-image-inner {
+  border-color: var(--lt-border) !important;
+}
+
+[data-theme="light"] .about-tag {
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .about-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .about-story {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .about-statement {
+  background: var(--lt-card) !important;
+  border-left-color: var(--lt-green) !important;
+  box-shadow: 0 1px 4px var(--lt-shadow) !important;
+}
+
+[data-theme="light"] .statement-label {
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .statement-text {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .about-btn {
+  background: var(--lt-green) !important;
+  color: #000 !important;
+}
+
+[data-theme="light"] .about-btn:hover {
+  background: #2BE00F !important;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.25) !important;
+}
+
+/* ── REVIEWS ── */
+[data-theme="light"] .reviews {
+  background: var(--lt-bg) !important;
+}
+
+[data-theme="light"] .reviews-bg-orb {
+  background: radial-gradient(circle, rgba(57, 255, 20, 0.06) 0%, transparent 70%) !important;
+}
+
+[data-theme="light"] .reviews-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .review-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: var(--lt-border) !important;
+}
+
+[data-theme="light"] .review-card:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+[data-theme="light"] .review-name {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .review-role {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .review-text {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .review-photo {
+  border-color: rgba(57, 255, 20, 0.2) !important;
+}
+
+[data-theme="light"] .review-arrow {
+  background: rgba(57, 255, 20, 0.06) !important;
+  border-color: rgba(57, 255, 20, 0.15) !important;
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .review-arrow:hover {
+  background: rgba(57, 255, 20, 0.10) !important;
+  border-color: var(--lt-green) !important;
+}
+
+[data-theme="light"] .review-dot {
+  border-color: rgba(57, 255, 20, 0.3) !important;
+}
+
+[data-theme="light"] .review-dot.active {
+  background: var(--lt-green) !important;
+  border-color: var(--lt-green) !important;
+}
+
+/* ── NEWSLETTER ── */
+[data-theme="light"] .newsletter {
+  background: var(--lt-bg-secondary) !important;
+  border-bottom-color: var(--lt-border-light) !important;
+}
+
+[data-theme="light"] .newsletter-title {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .newsletter-desc {
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .newsletter-input {
+  background: var(--lt-card) !important;
+  color: var(--lt-text-primary) !important;
+  border-color: var(--lt-border) !important;
+}
+
+[data-theme="light"] .newsletter-input::placeholder {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .newsletter-input:focus {
+  border-color: var(--lt-green) !important;
+  box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.15) !important;
+}
+
+[data-theme="light"] .newsletter-btn {
+  background: var(--lt-green) !important;
+  color: #000 !important;
+}
+
+[data-theme="light"] .newsletter-btn:hover {
+  background: #2BE00F !important;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.25) !important;
+}
+
+[data-theme="light"] .newsletter-note {
+  color: var(--lt-text-muted) !important;
+}
+
+/* ── FOOTER ── */
+[data-theme="light"] .footer {
+  background: var(--lt-bg) !important;
+  border-top-color: rgba(57, 255, 20, 0.12) !important;
+  color: var(--lt-text-secondary) !important;
+}
+
+[data-theme="light"] .footer-logo-text {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .footer-desc {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .footer-social-link {
+  background: rgba(57, 255, 20, 0.04) !important;
+  border-color: var(--lt-border) !important;
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .footer-social-link:hover {
+  background: rgba(57, 255, 20, 0.08) !important;
+  border-color: var(--lt-green) !important;
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .footer-heading {
+  color: var(--lt-text-primary) !important;
+}
+
+[data-theme="light"] .footer-list li a {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .footer-list li a:hover {
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .footer-contact li {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .footer-contact li svg {
+  color: var(--lt-green-dark) !important;
+}
+
+[data-theme="light"] .footer-divider {
+  background: var(--lt-border) !important;
+}
+
+[data-theme="light"] .footer-copy {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .footer-legal a {
+  color: var(--lt-text-muted) !important;
+}
+
+[data-theme="light"] .footer-legal a:hover {
+  color: var(--lt-green-dark) !important;
+}
+
+/* ── HERO (static bg) ── */
+[data-theme="light"] .hero::before {
+  background-image:
+    linear-gradient(rgba(57, 255, 20, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 255, 20, 0.04) 1px, transparent 1px) !important;
+  background-size: 80px 80px !important;
+}
+
+/* ── SECTION SUBTITLES (keep green, adjust shade) ── */
+[data-theme="light"] .categories-subtitle,
+[data-theme="light"] .products-subtitle,
+[data-theme="light"] .features-subtitle,
+[data-theme="light"] .reviews-subtitle,
+[data-theme="light"] .newsletter-subtitle {
+  color: var(--lt-green-dark) !important;
+}
