@@ -13,7 +13,7 @@ function Newsletter() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
           <span className="newsletter-subtitle">Stay Connected</span>
-          <h2 className="newsletter-title">Join the AERION Community</h2>
+          <h2 className="newsletter-title">Join the KITES Community</h2>
           <p className="newsletter-desc">
             Be the first to know about new product launches, exclusive offers, and advancements in drone battery technology.
           </p>

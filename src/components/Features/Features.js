@@ -80,7 +80,7 @@ function Features() {
     <section className="features">
       <div className="features-inner">
         <div className="features-header">
-          <span className="features-subtitle">Why AERION</span>
+          <span className="features-subtitle">Why KITES</span>
           <h2 className="features-title">Built Different. Built Better.</h2>
           <p className="features-desc">
             Every component is selected for performance. Every detail is engineered for the professional pilot.

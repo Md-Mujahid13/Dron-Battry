@@ -9,6 +9,7 @@ import Collection from './components/Collection/Collection';
 import About from './components/About/About';
 import Reviews from './components/Reviews/Reviews';
 import Newsletter from './components/Newsletter/Newsletter';
+import Instagram from './components/Instagram/Instagram';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -27,6 +28,7 @@ function App() {
           <Reviews />
           <Newsletter />
           </main>
+          <Instagram />
           <Footer />
           <ThemeToggle />
       </div>

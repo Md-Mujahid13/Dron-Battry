@@ -15,7 +15,7 @@ function About() {
           <div className="about-image-inner">
             <img
               src={img}
-              alt="AERION drone battery technology"
+              alt="KITES drone battery technology"
             />
           </div>
         </motion.div>
@@ -27,10 +27,10 @@ function About() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="about-tag">About AERION</span>
+          <span className="about-tag">About KITES</span>
           <h2 className="about-title">Powering the Future of Flight</h2>
           <p className="about-story">
-            AERION was born from a simple belief — that the people pushing the limits of flight deserve power
+            KITES was born from a simple belief — that the people pushing the limits of flight deserve power
             they can trust. Founded by drone engineers and battery technologists, we set out to build energy
             solutions that match the ambition of modern aviation.
           </p>

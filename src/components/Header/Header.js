@@ -136,7 +136,7 @@ function Header() {
           >
             <LogoIcon />
             <span className="header-logo-text">
-              AER<span className="header-logo-accent">ION</span>
+              KIT<span className="header-logo-accent">ES</span>
             </span>
           </motion.a>
 

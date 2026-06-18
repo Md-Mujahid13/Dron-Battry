@@ -9,7 +9,7 @@ import prod4 from '../../assets/card-4.png';
 const products = [
   {
     id: 1,
-    title: 'AERION Pro Battery 5000mAh',
+    title: 'KITES Pro Battery 5000mAh',
     description: 'High-density lithium cell with smart BMS for extended flight times.',
     price: 249.00,
     rating: 5,
@@ -17,7 +17,7 @@ const products = [
   },
   {
     id: 2,
-    title: 'AERION Smart Charger Pro',
+    title: 'KITES Smart Charger Pro',
     description: 'Intelligent 4-channel charger with real-time monitoring.',
     price: 189.00,
     rating: 4,
@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 3,
-    title: 'AERION Battery 3500mAh',
+    title: 'KITES Battery 3500mAh',
     description: 'Compact power solution for lightweight drones and racing quads.',
     price: 179.00,
     rating: 5,
@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 4,
-    title: 'AERION Power Bank Kit',
+    title: 'KITES Power Bank Kit',
     description: 'Portable charging station with dual output and flight case.',
     price: 129.00,
     rating: 4,
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: 5,
-    title: 'AERION Professional 8000mAh',
+    title: 'KITES Professional 8000mAh',
     description: 'Enterprise-grade battery for heavy-lift and industrial drones.',
     price: 449.00,
     rating: 5,
@@ -49,7 +49,7 @@ const products = [
   },
   {
     id: 6,
-    title: 'AERION QuickCharge Station',
+    title: 'KITES QuickCharge Station',
     description: '60W fast charger with intelligent power distribution.',
     price: 99.00,
     rating: 4,
@@ -57,7 +57,7 @@ const products = [
   },
   {
     id: 7,
-    title: 'AERION Battery Case',
+    title: 'KITES Battery Case',
     description: 'Premium protective case with custom foam inserts.',
     price: 69.00,
     rating: 3,
@@ -65,7 +65,7 @@ const products = [
   },
   {
     id: 8,
-    title: 'AERION Elite 10000mAh',
+    title: 'KITES Elite 10000mAh',
     description: 'Ultimate endurance battery with graphene-enhanced cells.',
     price: 599.00,
     rating: 5,

@@ -76,7 +76,7 @@ function Footer() {
           <motion.div className="footer-col footer-brand" variants={colVariants}>
             <div className="footer-logo">
               <LogoIcon />
-              <span className="footer-logo-text">AER<span className="footer-logo-accent">ION</span></span>
+              <span className="footer-logo-text">KIT<span className="footer-logo-accent">ES</span></span>
             </div>
             <p className="footer-desc">
               Premium drone battery technology engineered for professional pilots who demand uncompromising performance, reliability, and endurance.
@@ -147,7 +147,7 @@ function Footer() {
         <div className="footer-bottom">
           <div className="footer-divider" />
           <div className="footer-bottom-inner">
-            <p className="footer-copy">&copy; 2026 AERION. All rights reserved.</p>
+            <p className="footer-copy">&copy; 2026 KITES. All rights reserved.</p>
             <div className="footer-legal">
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Service</a>

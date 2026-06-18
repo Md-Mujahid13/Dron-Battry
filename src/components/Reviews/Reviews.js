@@ -8,14 +8,14 @@ const reviews = [
     role: 'Commercial Drone Pilot',
     photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80',
     rating: 5,
-    text: 'The AERION Pro 5000mAh batteries have completely transformed my workflow. I\'m getting an extra 12 minutes of flight time compared to my previous batteries. The build quality is exceptional and the smart BMS gives me real confidence on commercial shoots.',
+    text: 'The KITES Pro 5000mAh batteries have completely transformed my workflow. I\'m getting an extra 12 minutes of flight time compared to my previous batteries. The build quality is exceptional and the smart BMS gives me real confidence on commercial shoots.',
   },
   {
     name: 'Sarah Chen',
     role: 'Aerial Photography Studio',
     photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&q=80',
     rating: 5,
-    text: 'We run a fleet of six drones for real estate and cinematography work. AERION batteries have been a game-changer. Consistent performance, fast charging, and they\'ve held up beautifully after hundreds of cycles.',
+    text: 'We run a fleet of six drones for real estate and cinematography work. KITES batteries have been a game-changer. Consistent performance, fast charging, and they\'ve held up beautifully after hundreds of cycles.',
   },
   {
     name: 'Marcus Rivera',
@@ -29,7 +29,7 @@ const reviews = [
     role: 'Drone Racing Champion',
     photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80',
     rating: 5,
-    text: 'When you\'re pushing 120mph through a gate, you need power you can trust to the millisecond. AERION delivers consistent discharge curves that make my tuning rock solid. These are now the only packs I race with.',
+    text: 'When you\'re pushing 120mph through a gate, you need power you can trust to the millisecond. KITES delivers consistent discharge curves that make my tuning rock solid. These are now the only packs I race with.',
   },
 ];
 
