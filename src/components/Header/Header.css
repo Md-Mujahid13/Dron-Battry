@@ -1,0 +1,239 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+  font-family: 'Rajdhani', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: transparent;
+  transition: background 0.35s ease, border-bottom 0.35s ease, backdrop-filter 0.35s ease;
+}
+
+.header.scrolled {
+  background: rgba(17, 17, 17, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.1);
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header-logo-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.header-logo-text {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+}
+
+.header-logo-accent {
+  color: #39FF14;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #39FF14;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header-nav a:hover {
+  color: #fff;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.header-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header-actions button:hover {
+  background: rgba(57, 255, 20, 0.08);
+}
+
+.header-actions button svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #39FF14;
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.hamburger-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 0;
+  transform-origin: center;
+}
+
+.hamburger {
+  display: none !important;
+}
+
+.mobile-menu-overlay {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 0 1.25rem;
+  }
+
+  .header-inner {
+    height: 64px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu-overlay {
+    display: block;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 64px);
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
+
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 80%;
+    max-width: 360px;
+    height: calc(100vh - 64px);
+    background: #111;
+    z-index: 1000;
+    padding: 2rem 2rem 2rem 2.5rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+    border-left: 1px solid rgba(57, 255, 20, 0.1);
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 0.875rem 0;
+    border-bottom: 1px solid rgba(57, 255, 20, 0.06);
+    font-family: 'Rajdhani', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-menu a:hover {
+    color: #39FF14;
+  }
+}

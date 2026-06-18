@@ -1,0 +1,130 @@
+.newsletter {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #0A0A0A 0%, #111 50%, #050505 100%);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.06);
+}
+
+.newsletter-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-subtitle {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #39FF14;
+  margin-bottom: 0.75rem;
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+}
+
+.newsletter-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  color: #fff;
+  margin: 0 0 1rem;
+  font-family: 'Orbitron', 'Exo', sans-serif;
+  text-transform: uppercase;
+}
+
+.newsletter-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+  margin: 0 0 2.25rem;
+  max-width: 480px;
+}
+
+.newsletter-form {
+  width: 100%;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  font-family: 'Rajdhani', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background: #1A1A1A;
+  border: 1px solid rgba(57, 255, 20, 0.1);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-input:focus {
+  border-color: #39FF14;
+  box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.12);
+}
+
+.newsletter-btn {
+  padding: 1rem 2rem;
+  background: #39FF14;
+  color: #000;
+  font-family: 'Rajdhani', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.newsletter-btn:hover {
+  background: #2BE00F;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.2);
+}
+
+.newsletter-note {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0.75rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .newsletter {
+    padding: 4rem 1.25rem;
+  }
+
+  .newsletter-title {
+    font-size: 1.75rem;
+  }
+
+  .newsletter-desc {
+    font-size: 0.9375rem;
+  }
+
+  .newsletter-input-group {
+    flex-direction: column;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

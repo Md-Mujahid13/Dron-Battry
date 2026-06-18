@@ -1,0 +1,133 @@
+.collection {
+  padding: 6rem 2rem;
+  background: #111;
+}
+
+.collection-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.collection-content {
+  max-width: 480px;
+}
+
+.collection-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #39FF14;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+}
+
+.collection-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: #fff;
+  margin: 0 0 1.25rem;
+  font-family: 'Orbitron', 'Exo', sans-serif;
+  text-transform: uppercase;
+}
+
+.collection-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.75;
+  margin: 0 0 2.25rem;
+}
+
+.collection-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 1rem 2.5rem;
+  background: #39FF14;
+  color: #000;
+  font-family: 'Rajdhani', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.collection-btn:hover {
+  background: #2BE00F;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.25);
+}
+
+.collection-image {
+  display: flex;
+  justify-content: center;
+}
+
+.collection-image-inner {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(57, 255, 20, 0.08);
+}
+
+.collection-image-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.collection-image-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(57, 255, 20, 0.08), transparent 60%);
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .collection-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .collection-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .collection-title {
+    font-size: 2.25rem;
+  }
+
+  .collection-image-inner {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .collection {
+    padding: 4rem 1.25rem;
+  }
+
+  .collection-title {
+    font-size: 1.75rem;
+  }
+
+  .collection-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
